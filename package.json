@@ -1,8 +1,11 @@
 {
+  "homepage": "https://github.com/ThyMuoyhak/codekhmerlearning169",
   "name": "mypro",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aos": "^2.3.4",
+    "cookie": "^1.0.2",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -12,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "preydeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -33,6 +38,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.1",
+    "react-router-dom": "^7.1.2",
+    "tailwindcss": "^3.4.17"
   }
 }
